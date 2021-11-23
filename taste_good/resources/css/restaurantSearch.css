@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* 본문 상단 */
+#restaurantImg {
+	background-image: url(https://seoul.intercontinental.com/grandicparnas/kor/assets/img/img-restaurant-main.jpg);
+}
+
+
+/* 검색어 입력창 */
+.restaurant-search {
+	position: relative;
+	z-index: 20;
+}
+.restaurant-search form input {
+	width: 100%;
+	height: 60px;
+	background-color: #f3f5f8;
+	font-size: 16px;
+	padding: 0 20px;
+	border: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.restaurant-search .col-12 {
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.restaurant-search .col-12 {
+		margin-bottom: 15px;
+	}
+}
+
+
+/* 검색 버튼 */
+.restaurant-btn {
+	display: inline-block;
+	width: 100%;
+	height: 60px;
+	color: #ffffff;
+	border: none;
+	border-left: 3px solid #1c8314;
+	border-radius: 0;
+	padding: 0 30px;
+	font-size: 18px;
+	line-height: 58px;
+	font-weight: 600;
+	transition-duration: 500ms;
+	background-color: #40ba37;
+}
+.restaurant-btn.active, .restaurant-btn:hover, .restaurant-btn:focus {
+	background-color: #1c8314;
+	border-color: #40ba37;
+}
+
+
+/* 지도 본문 */
+#map_wrap, .map_wrap * {
+	margin: 0;
+	padding: 0;
+	font-family: 'Malgun Gothic',dotum,'돋움',sans-serif;
+	font-size: 12px;
+}
+#map_wrap a, .map_wrap a:hover, .map_wrap a:active {
+	color: #000;
+	text-decoration: none;
+}
+#map_wrap {
+	position: relative;
+}
+#list_wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 250px;
+	margin: 10px 0 30px 10px;
+	padding: 5px;
+	overflow-y: auto;
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 1;
+	font-size: 12px;
+	border-radius: 10px;
+}
+/* 화면 크기 작아질 시 목록 숨기기 */
+@media only screen and (max-width: 767px) {
+	#list_wrap {
+		display: none;
+	}
+}
+
+
+/* 목록 */
+#restaurantList li {
+	list-style: none;}
+#restaurantList .listItem {
+	position: relative;
+	border-bottom: 1px solid #888;
+	overflow: hidden; cursor: pointer;
+	min-height: 65px;
+}
+#restaurantList .listItem span {
+	display: block;
+	margin: 2px 0 0 4px;
+}
+#restaurantList .listItem .info {
+	padding: 8px 0 8px 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#restaurantList .info .placeName {
+	margin: 0;
+	font-weight: bold;
+}
+#restaurantList .info .tel {
+	color: #0050af;
+}
+
+
+/* 목록 이미지 */
+#restaurantList .listItem .markerbg {
+	float: left;
+	position: absolute;
+	width: 36px;
+	height: 37px;
+	margin: 10px 0 0 10px;
+	background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;
+}
+#restaurantList .listItem .marker_1 {background-position: 0 -10px;}
+#restaurantList .listItem .marker_2 {background-position: 0 -56px;}
+#restaurantList .listItem .marker_3 {background-position: 0 -102px;}
+#restaurantList .listItem .marker_4 {background-position: 0 -148px;}
+#restaurantList .listItem .marker_5 {background-position: 0 -194px;}
+#restaurantList .listItem .marker_6 {background-position: 0 -240px;}
+#restaurantList .listItem .marker_7 {background-position: 0 -286px;}
+#restaurantList .listItem .marker_8 {background-position: 0 -332px;}
+#restaurantList .listItem .marker_9 {background-position: 0 -378px;}
+#restaurantList .listItem .marker_10 {background-position: 0 -423px;}
+#restaurantList .listItem .marker_11 {background-position: 0 -470px;}
+#restaurantList .listItem .marker_12 {background-position: 0 -516px;}
+#restaurantList .listItem .marker_13 {background-position: 0 -562px;}
+#restaurantList .listItem .marker_14 {background-position: 0 -608px;}
+#restaurantList .listItem .marker_15 {background-position: 0 -654px;}
+
+
+/* 페이지 번호 */
+#pagination {
+	margin: 10px auto;
+	text-align: center;
+}
+#pagination a {
+	display: inline-block;
+	margin-right: 10px;
+}
+#pagination .on {
+	font-weight: bold;
+	cursor: default;
+	color: #777;
+}
+
+
+/* 인포윈도우 */
+.infowindow {
+	padding: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+

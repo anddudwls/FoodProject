@@ -1,0 +1,93 @@
+@charset "EUC-KR";
+/* Table-area */
+.thead-area{
+	background-color: #40ba37;
+	color: #ffffff;
+}
+
+/* Comment-area */
+.comment-area-well{
+	/*<div class="well">...</div>*/
+}
+
+/* Dropdown-area */
+form fieldset {
+			margin-bottom: 25px;
+		}
+
+		form legend {
+			font-size: 15px;
+			font-weight: 600;
+		}
+
+		.dropdown-list {
+			font-size: 14px;
+			color: #390;
+			font-weight: bold;
+			float: left;
+			text-align: right;
+			margin-right: 10px;
+		}
+
+		form ul li {
+			list-style: none;
+			margin: 15px 0;
+			font-size: 14px;
+		}
+		
+/* float-setting */
+.b-float-right{
+	
+	float: right;
+}
+.b-float-left{
+	
+	float: left;
+}
+
+/* comment*/ 
+#comment_main{
+float: left;
+background-color: #FFCA6C;
+text_align: center;
+vertical-align: middle;
+overfolw: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#recipeList td {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 5px;
+}
+
+#recipeList .tableCT {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#recipeList .tableCT a {
+	color: blue;
+	font-size: 15px;
+}
+
+#recipeList .tablePD {
+	padding: 2vw;
+}
